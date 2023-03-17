@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: -150px;
+}
+
+body {
+    margin: 0px;
+    background-color: #718383;
+}
+
+body canvas {
+    padding: 0;
+    margin: 0px auto 0px;
+    display: block;
+    width: 100%;
+}
