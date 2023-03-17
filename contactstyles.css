@@ -24,8 +24,8 @@
     height: 100vh;
 } */
 
-/* the format for the header box */
-.box-main {
+/* the format for the header pic */
+.pic-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,18 +62,18 @@
     text-align: center;
 }
 
-#service {
+#profile {
     margin: 34px;
     display: flex;
 }
 
-#service .box {
+#profile .pic {
     padding: 100px;
     margin: 3px 6px;
     border-radius: 28px;
 }
 
-#service .box img {
+#profile .pic img {
     margin-top: 10px;
     height: 150px;
     margin: auto;
@@ -81,33 +81,33 @@
     border-radius: 200px;
 }
 
-#service .box p {
+#profile .pic p {
 
     font-family: sans-serif;
     text-align: center;
 }
 /* this will make the people either in a line horizontally or in a line vertically */
-#services {
+#profiles {
     margin: 34px;
     display: flex;
 }
-/* padding for boxes */
-#services .box {
+/* padding for pices */
+#profiles .pic {
 
     padding: 90px;
     margin: 3px 6px;
     border-radius: 28px;
 }
 /* this is to make the image area circular not square */
-/* #services .box img {
+#profiles .pic img {
     margin-top: 10px;
     height: 150px;
     margin: auto;
     display: block;
     border-radius: 100px;
-} */
+}
 
-#services .box p {
+#profiles .pic p {
     
     font-family: sans-serif;
     text-align: center;
