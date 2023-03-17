@@ -1,0 +1,134 @@
+/* makes flush to the sides */
+* {
+    text-align: center;
+    margin:0.5px;
+    padding:10px;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background {
+    background: lightcoral;
+    background-blend-mode: darken;
+    background-size: auto;
+}
+
+/* .firstsection {
+    height: 100vh;
+} */
+
+/* the format for the header pic */
+.pic-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf {
+    width: 75%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center
+}
+
+.firstHalf img {
+    display: flex;
+    border-radius: 9050px;
+}
+/* text for the about us */
+.text-big {
+    /* color: black; */
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+/* format for the text under about us */
+.text-small {
+    /* color: black; */
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#profile {
+    margin: 34px;
+    display: flex;
+}
+
+#profile .pic {
+    padding: 100px;
+    margin: 3px 6px;
+    border-radius: 28px;
+}
+
+#profile .pic img {
+    margin-top: 10px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 200px;
+}
+
+#profile .pic p {
+
+    font-family: sans-serif;
+    text-align: center;
+}
+/* this will make the people either in a line horizontally or in a line vertically */
+#profiles {
+    margin: 34px;
+    display: flex;
+}
+/* padding for pices */
+#profiles .pic {
+
+    padding: 90px;
+    margin: 3px 6px;
+    border-radius: 28px;
+}
+/* this is to make the image area circular not square */
+#profiles .pic img {
+    margin-top: 10px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+}
+
+#profiles .pic p {
+    
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 650px) {
+.column {
+width: 100%;
+display: block;
+}
+}
