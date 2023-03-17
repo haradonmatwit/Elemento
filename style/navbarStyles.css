@@ -60,13 +60,12 @@
 	background-color: var(--navbar-bg-contrast);
 }
 
-.navbar-logo {
-	background-color: var(--navbar-text-color-focus);
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	margin-right: 0.5em;
-}
+/* .navbar-logo {
+	
+
+	
+	
+} */
 
 .navbar-toggle {
 	cursor: pointer;
@@ -80,6 +79,17 @@
 	flex-direction: column;
 }
 
+.logo-img {
+	width: 90px;
+	height: 90px;
+	margin-top: 30px;
+	display: inline-block;
+	position: static;
+	margin-right: 40px;
+	margin-right: 0.5em;
+	position: static;
+	border-radius: 50%;
+}
 #navbar-menu {
 	position: fixed;
 	top: var(--navbar-height);
