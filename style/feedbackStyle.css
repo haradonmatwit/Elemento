@@ -4,7 +4,8 @@ legend {
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
-	background-color: #4d3d29;
+	/* background-color: #4d3d29; */
+	background-color: transparent;
 	height: 30px;
 	color: black;
 	text-transform: uppercase;
@@ -30,7 +31,6 @@ label {
 section {
 	margin-bottom: 1em;
 	padding: 0;
-
 	width: 100%;
 }
 
@@ -42,7 +42,6 @@ table {
 	border: collapse;
 	border-spacing: 0;
 	width: 100%;
-
 	margin: 0 auto;
 }
 table tbody td {
@@ -54,11 +53,13 @@ table tbody td {
 input[name='title'],
 textarea[name='description'] {
 	width: 100%;
+	padding: 5px;
 }
 
 input[name='email'] {
 	width: 450px;
 }
+
 input[name='email'],
 input[name='title'],
 textarea[name='description'],
@@ -67,6 +68,7 @@ input[name='time'] {
 	background-color: #ededed;
 	font-size: 25px;
 	font-family: Elemento;
+	padding: 5px;
 }
 
 input[name='email'],
@@ -82,9 +84,10 @@ input[name='time'] {
 }
 
 .rectangle-date-time {
-	background-color: #4d3d29;
+	/* background-color: #4d3d29; */
 	padding: 0.5em;
 	font-family: Elemento;
+	text-align: center;
 }
 
 .rounded {
@@ -92,7 +95,7 @@ input[name='time'] {
 	border-radius: 7px;
 	text-align: center;
 	font-weight: bold;
-	background-color: #e91e63;
+	background-color: #005c80;
 	padding: 0.5em 0 0.5em 0;
 	margin: 0.3em;
 	width: 7em;
