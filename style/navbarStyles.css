@@ -5,6 +5,15 @@
 	--navbar-bg-contrast: hsl(0, 0%, 25%);
 }
 
+@font-face {
+	font-family: Elemento;
+	src: url('./../font/Elemento-Regular.otf');
+}
+
+a {
+	font-family: Elemento;
+}
+
 .container {
 	max-width: 100%;
 	padding-left: 2rem;
