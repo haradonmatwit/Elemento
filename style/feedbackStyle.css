@@ -3,6 +3,7 @@
 legend {
 	text-align: center;
 	font-size: 40px;
+	font-weight: bold;
 	background-color: #4d3d29;
 	height: 30px;
 	color: black;
@@ -33,21 +34,23 @@ table {
 	border: collapse;
 	border-spacing: 0;
 	width: 100%;
+
 	margin: 0 auto;
 }
 table tbody td {
 	line-height: 1.5em;
 	vertical-align: top;
-	padding: 0.5em 0.75em;
+	padding: 0em 0.75em 0em 0.75em;
 }
 
-input[type='text'],
-input[type='date'],
-input[type='time'] {
-	height: 1.75em;
-}
 input[name='title'] {
 	width: 100%;
+}
+input[name='title'],
+textarea[name='description'],
+input[name='date'],
+input[name='time'] {
+	background-color: #ededed;
 }
 
 textarea {
@@ -56,8 +59,7 @@ textarea {
 
 .box-date-time {
 	border-bottom: 1pt solid #4d3d29;
-	padding: 1em;
-	margin-bottom: 0.4em;
+	padding-bottom: 1em;
 }
 
 .rectangle-date-time {
@@ -69,7 +71,6 @@ textarea {
 	border: none;
 	border-radius: 7px;
 	text-align: center;
-	color: white;
 	font-weight: bold;
 	background-color: #e91e63;
 	padding: 0.5em 0 0.5em 0;

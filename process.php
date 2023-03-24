@@ -12,20 +12,28 @@
    <h2>GET Data</h2>
 <?php 
 
-   $title = $_GET['title'];
-   $description = $_GET['description'];
-   $date = $_GET['date'];
-   $time = $_GET['time'];
-
-?>
+  if (count($_GET) == 0)
+     echo "<p><em>There are no GET variables</em></p>";
+  foreach ($_GET as $key => $value) 
+  { 
+      echo "<strong>" . $key . "=</strong>" . $value . "</br>";
+  }
+  $checked = $_GET['index'];
+   for($i=0; $i < count($checked); $i++){
+       echo "Index " . $i . " Selected value=" . $checked[$i] . "<br/>";
+   }
+ 
+?>  
 
    <h2>POST Data</h2>
-<?php
-   $title = $_POST['title'];
-   $email = $_POST['description'];
-   $date = $_POST['date'];
-   $time = $_POST['time'];
-
-?>
+ <?php 
+  if (count($_POST) == 0)
+     echo "<p><em>There are no POST variables</em></p>";
+  foreach ($_POST as $key => $value) 
+  { 
+      echo "<strong>" . $key . "=</strong>" . $value . "</br>";
+  }  
+?>    
+   
 </body>
 </html>
