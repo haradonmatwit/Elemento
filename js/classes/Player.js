@@ -15,7 +15,7 @@ class Player extends Sprite {
       bottom: this.position.y + this.height,
     }
     this.gravity = 1
-
+    // this.imageSrc = imageSrc
     this.collisionBlocks = collisionBlocks
   }
 
@@ -33,6 +33,7 @@ class Player extends Sprite {
 
     this.updateHitbox()
 
+    // // hitbox
     // c.fillRect(
     //   this.hitbox.position.x,
     //   this.hitbox.position.y,
@@ -40,6 +41,11 @@ class Player extends Sprite {
     //   this.hitbox.height
     // )
     this.checkForVerticalCollisions()
+
+    // obstacle collisions
+    this.checkForSpikeCollisions()
+    this.checkForFireCollisions()
+    this.checkForWaterCollisions()
   }
 
   handleInput(keys) {
@@ -148,6 +154,87 @@ class Player extends Sprite {
           this.position.y = collisionBlock.position.y - offset - 0.01
           break
         }
+      }
+    }
+  }
+
+  checkForSpikeCollisions() {
+    for (let i = 0; i < spikes.length; i++) {
+      const spike = spikes[i]
+
+      // check if player hits the spikes
+      if (
+        this.hitbox.position.x <=
+          spike.position.x + spike.width &&
+        this.hitbox.position.x + this.hitbox.width >=
+          spike.position.x &&
+        this.hitbox.position.y + this.hitbox.height >=
+          spike.position.y &&
+        this.hitbox.position.y <=
+          spike.position.y + spike.height
+      ) {
+        player.velocity.x = 0
+        player.velocity.y = 0
+        level++
+        if (level === 2) level = 1
+        levels[level].init()
+        player.switchSprite('idleRight')
+        player.preventInput = false
+        return
+      }
+    }
+  }
+
+  checkForFireCollisions() {
+    for (let i = 0; i < fires.length; i++) {
+      const fire = fires[i]
+
+      // check if player hits the fire
+      if (
+        this.hitbox.position.x <=
+          fire.position.x + fire.width &&
+        this.hitbox.position.x + this.hitbox.width >=
+          fire.position.x &&
+        this.hitbox.position.y + this.hitbox.height >=
+          fire.position.y &&
+        this.hitbox.position.y <=
+          fire.position.y + fire.height
+      ) {
+        player.velocity.x = 0
+        player.velocity.y = 0
+        level++
+        if (level === 2) level = 1
+        levels[level].init()
+        player.switchSprite('idleRight')
+        player.preventInput = false
+        return
+      }
+    }
+  }
+
+  checkForWaterCollisions() {
+    for (let i = 0; i < waters.length; i++) {
+      const water = waters[i]
+
+      // check if player hits the water
+      if (
+        this.hitbox.position.x <=
+          water.position.x + water.width &&
+        this.hitbox.position.x + this.hitbox.width >=
+          water.position.x &&
+        this.hitbox.position.y + this.hitbox.height >=
+          water.position.y &&
+        this.hitbox.position.y <=
+          water.position.y + water.height
+      ) {
+        player.velocity.x = 0
+        player.velocity.y = 0
+        level++
+        if (level === 2) level = 1
+        levels[level].init()
+        player.switchSprite('idleRight')
+        player.preventInput = false
+        return
       }
     }
   }

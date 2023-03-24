@@ -43,20 +43,25 @@ const player = new Player({
       imageSrc: './img/sprites/enter.png',
       onComplete: () => {
         console.log('completed animation')
-        gsap.to(overlay, {
-          opacity: 1,
-          onComplete: () => {
-            level++
+        level++
+        if (level === 2) level = 1
+        levels[level].init()
+        player.switchSprite('idleRight')
+        player.preventInput = false
+        // gsap.to(overlay, {
+        //   opacity: 1,
+        //   onComplete: () => {
+        //     level++
 
-            if (level === 4) level = 1
-            levels[level].init()
-            player.switchSprite('idleRight')
-            player.preventInput = false
-            gsap.to(overlay, {
-              opacity: 0,
-            })
-          },
-        })
+        //     if (level === 4) level = 1
+        //     levels[level].init()
+        //     player.switchSprite('idleRight')
+        //     player.preventInput = false
+        //     gsap.to(overlay, {
+        //       opacity: 0,
+        //     })
+        //   },
+        // })
       },
     },
   },
@@ -69,6 +74,9 @@ let levels = {
       parsedCollisions = collisionsLevel1.parse2D()
       collisionBlocks = parsedCollisions.createObjectsFrom2D()
       player.collisionBlocks = collisionBlocks
+      player.position.x = 200
+      player.position.y = 300
+
       if (player.currentAnimation) player.currentAnimation.isActive = false
 
       background = new Sprite({
@@ -90,6 +98,40 @@ let levels = {
           frameBuffer: 2,
           loop: false,
           autoplay: false,
+        }),
+      ]
+
+      spikes = [
+        new Sprite({
+          position: {
+            x: 350,
+            y: 353,
+          },
+          imageSrc: './img/obstacles/spikes.png',
+        }),
+      ]
+
+      fires = [
+        new Sprite({
+          position: {
+            x: 600,
+            y: 353,
+          },
+          imageSrc: './img/obstacles/fireTile.png',
+          frameRate: 8,
+          frameBuffer: 7,
+        }),
+      ]
+
+      waters = [
+        new Sprite({
+          position: {
+            x: 468,
+            y: 353,
+          },
+          imageSrc: './img/obstacles/waterTile.png',
+          frameRate: 8,
+          frameBuffer: 6,
         }),
       ]
     },
@@ -189,6 +231,21 @@ function animate() {
 
   doors.forEach((door) => {
     door.draw()
+  })
+
+  // draw spikes
+  spikes.forEach((spike) => {
+    spike.draw()
+  })
+
+  // draw fire
+  fires.forEach((fire) => {
+    fire.draw()
+  })
+
+  // draw water
+  waters.forEach((water) => {
+    water.draw()
   })
 
   player.handleInput(keys)
