@@ -1,5 +1,5 @@
 .about-desc {
-	padding-top: 40px;
+	padding-top: 20px;
 	position: absolute;
 	padding-left: 40px;
 	display: flex;
@@ -8,10 +8,9 @@
 	text-align: left;
 	justify-content: start;
 	width: 700px;
-	color: #fbeee0;
 }
-.desc-logo {
-	border-bottom: 5px solid;
+.desc-about-page-div {
+	color: #fbeee0;
 }
 .logo-img-desc {
 	width: 270px;
@@ -22,22 +21,40 @@
 	padding-right: 200px;
 }
 .header h1 {
+	font-size: 50px;
 	padding-left: 28px;
+	text-align: center;
 }
 
-.about-tile-side1 {
+.floor-img-desc {
+	border-top: 5px solid;
 	color: #fbeee0;
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	z-index: -1;
 }
+
 .about-tile-side2 {
 	color: #3b2f1f;
 }
 /* the format for the header pic */
-.pic-main {
-	display: flex;
+.first-section {
+	padding-top: 50px;
+	font-size: 35px;
+	display: block;
 	justify-content: center;
-	color: white;
+	text-align: center;
+	margin-bottom: 30px;
 }
-
+.about-box2 {
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	background-color: #005c80;
+	margin-top: 40px;
+	box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.8), 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
 /* text for the about us */
 .text-big {
 	font-weight: bold;
@@ -52,32 +69,51 @@
 
 .about-box1 {
 	width: 740px;
-	height: 653px;
+	height: 646px;
 	z-index: -1;
 	position: absolute;
 	background-color: #8a2828;
 	box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.5) inset;
 }
 
+.about-box3 {
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	top: -20px;
+	background-color: #5f5f5f;
+	z-index: -1;
+}
+
+.about-box8 {
+	width: 100%;
+	height: 68px;
+	position: absolute;
+	background-color: #005c80;
+	box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.8);
+}
 /* this will make the people either in a line horizontally or in a line vertically */
 #profiles {
 	margin: 34px;
+	margin-top: 0px;
 	display: flex;
 }
 
 /* padding for pices */
 #profiles .pic {
-	padding: 90px;
-	margin: 3px 6px;
+	padding-left: 155px;
 	border-radius: 28px;
 }
 /* this is to make the image area circular not square */
 #profiles .pic img {
-	margin-top: 10px;
+	top: 10px;
 	height: 150px;
 	margin: auto;
-	display: block;
 	border-radius: 100px;
+}
+
+.pic p {
+	display: block;
 }
 
 #profiles .pic p {

@@ -1,4 +1,4 @@
-.gameBtn {
+.gameBtn1 {
 	background-color: #f0dac4;
 	border: 2px solid #422800;
 	border-radius: 100px;
@@ -19,18 +19,49 @@
 	height: 150px;
 }
 
-.gameBtn:hover {
+.gameBtn1:hover {
 	background-color: #ededed;
 }
 
-.gameBtn:active {
+.gameBtn1:active {
 	background-color: #ff6565;
 	box-shadow: #422800 2px 2px 0 0;
 	transform: translate(2px, 2px);
 }
 
+.gameBtn2 {
+	background-color: #f0dac4;
+	border: 2px solid #422800;
+	border-radius: 100px;
+	box-shadow: #422800 12px 12px 0 0;
+	color: #422800;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 30px;
+	padding: 0 18px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 230px;
+	height: 55px;
+}
+
+.gameBtn2:hover {
+	background-color: #ededed;
+}
+
+.gameBtn2:active {
+	background-color: #ff6565;
+	box-shadow: #422800 2px 2px 0 0;
+	transform: translate(2px, 2px);
+}
 @media (min-width: 768px) {
-	.gameBtn {
+	.gameBtn1,
+	.gameBtn2 {
 		min-width: 120px;
 		padding: 0 25px;
 	}

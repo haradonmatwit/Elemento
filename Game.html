@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="./style/homeStyles.css" />
 		<link rel="stylesheet" href="./style/navbarStyles.css" />
 		<link rel="stylesheet" href="./style/gameStyles.css" />
+		<link rel="stylesheet" href="./style/gameButton.css" />
 		<link rel="stylesheet" href="./index.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,8 +12,8 @@
 		<title>Game</title>
 	</head>
 	<script></script>
-	<body class="game-screen">
-		<header id="navbar">
+
+	<!-- <header id="navbar">
 			<nav class="navbar-container container">
 				<a href="./Home.html" class="home-link">
 					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
@@ -46,11 +47,13 @@
 							>
 						</li>
 					</ul>
-				</div>
-			</nav>
-		</header>
-
+			
+	</div>
+	</nav>
+	</header> -->
+	<body class="game-screen">
 		<h1 class="gametab-title">ELEMENTO</h1>
+
 		<canvas></canvas>
 		<!-- <script
 		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
@@ -73,4 +76,9 @@
 			to overcome obstacles within these ruins, and reach the treasure!
 		</p> -->
 	</body>
+	<footer class="game-footer">
+		<div classes="go-back-btn">
+			<button type="button" class="gameBtn2" role="button" onclick="window.location.href='./Home.html';"><- Go Back</button>
+		</div>
+	</footer>
 </html>
