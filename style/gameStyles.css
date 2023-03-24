@@ -1,0 +1,23 @@
+.gametab-title {
+	text-align: center;
+	font-size: 100px;
+	position: absolute;
+	right: 65%;
+	left: 35%;
+	padding-top: 50px;
+}
+
+.game-screen {
+	margin: 0px;
+	background-color: #718383;
+	position: absolute;
+	width: 100%;
+}
+
+.game-screen canvas {
+	padding: 0;
+	margin: 0px auto 0px;
+	position: fixed;
+	align-items: baseline;
+	width: 100%;
+}

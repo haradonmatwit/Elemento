@@ -1,17 +1,14 @@
-h1, p {
-    text-align: center;
-    font-size: 100px;
-    margin-bottom: -150px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Elemento;
+	src: url('./../font/Elemento-Regular.otf');
 }
 
 body {
-    margin: 0px;
-    background-color: #718383;
-}
-
-body canvas {
-    padding: 0;
-    margin: 0px auto 0px;
-    display: block;
-    width: 100%;
+	font-family: Elemento;
 }
