@@ -1,0 +1,103 @@
+.about-desc {
+	padding-top: 40px;
+	position: absolute;
+	padding-left: 40px;
+	display: flex;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: left;
+	justify-content: start;
+	width: 700px;
+	color: #fbeee0;
+}
+.desc-logo {
+	border-bottom: 5px solid;
+}
+.logo-img-desc {
+	width: 270px;
+	transform: scaleX(-1);
+}
+.logo-desc {
+	text-align: right;
+	padding-right: 200px;
+}
+.header h1 {
+	padding-left: 28px;
+}
+
+.about-tile-side1 {
+	color: #fbeee0;
+}
+.about-tile-side2 {
+	color: #3b2f1f;
+}
+/* the format for the header pic */
+.pic-main {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+/* text for the about us */
+.text-big {
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+}
+/* format for the text under about us */
+.text-small {
+	font-size: 20px;
+	text-align: center;
+}
+
+.about-box1 {
+	width: 740px;
+	height: 653px;
+	z-index: -1;
+	position: absolute;
+	background-color: #8a2828;
+	box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* this will make the people either in a line horizontally or in a line vertically */
+#profiles {
+	margin: 34px;
+	display: flex;
+}
+
+/* padding for pices */
+#profiles .pic {
+	padding: 90px;
+	margin: 3px 6px;
+	border-radius: 28px;
+}
+/* this is to make the image area circular not square */
+#profiles .pic img {
+	margin-top: 10px;
+	height: 150px;
+	margin: auto;
+	display: block;
+	border-radius: 100px;
+}
+
+#profiles .pic p {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-footer {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}

@@ -1,0 +1,44 @@
+body {
+	height: 100vh;
+	background-color: #578093;
+	line-height: 1.6;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+.home-title-side1 {
+	color: #fbeee0;
+}
+.home-title-side2 {
+	color: #3b2f1f;
+}
+
+.game-btn {
+	position: relative;
+	text-align: right;
+	padding-right: 130px;
+	padding-top: 170px;
+}
+
+.box {
+	width: 733px;
+	height: 653px;
+	z-index: -1;
+	position: absolute;
+	background-color: #8a2828;
+	box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.5) inset;
+}
+
+.home-description {
+	position: absolute;
+	text-align: justify;
+	width: 600px;
+	font-size: 38px;
+	color: #fbeee0;
+}
+.dec-container {
+	padding-left: 70px;
+}
