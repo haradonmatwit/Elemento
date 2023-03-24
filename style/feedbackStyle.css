@@ -2,7 +2,7 @@
 
 legend {
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: bold;
 	background-color: #4d3d29;
 	height: 30px;
@@ -22,6 +22,11 @@ fieldset {
 form p {
 	margin-top: 0.5em;
 }
+
+label {
+	font-size: 20px;
+	font-weight: 600;
+}
 section {
 	margin-bottom: 1em;
 	padding: 0;
@@ -29,6 +34,9 @@ section {
 	width: 100%;
 }
 
+.table-feedback {
+	margin-top: 50px;
+}
 /*Table Formating*/
 table {
 	border: collapse;
@@ -43,18 +51,29 @@ table tbody td {
 	padding: 0em 0.75em 0em 0.75em;
 }
 
-input[name='title'] {
+input[name='title'],
+textarea[name='description'] {
 	width: 100%;
 }
+
+input[name='email'] {
+	width: 450px;
+}
+input[name='email'],
 input[name='title'],
 textarea[name='description'],
 input[name='date'],
 input[name='time'] {
 	background-color: #ededed;
+	font-size: 25px;
+	font-family: Elemento;
 }
 
-textarea {
-	width: 100%;
+input[name='email'],
+input[name='title'],
+input[name='date'],
+input[name='time'] {
+	height: 35px;
 }
 
 .box-date-time {
@@ -65,6 +84,7 @@ textarea {
 .rectangle-date-time {
 	background-color: #4d3d29;
 	padding: 0.5em;
+	font-family: Elemento;
 }
 
 .rounded {

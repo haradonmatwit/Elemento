@@ -56,17 +56,21 @@
 		<form name="test" method="post" action="http://www.randyconnolly.com/tests/process.php">
 			<fieldset>
 				<legend>FEEDBACK</legend>
-				<table>
+				<table class="table-feedback">
 					<tr>
 						<td colspan="2">
 							<p>
-								<label>Subject</label><br />
-								<input type="text" name="title" placeholder="Give your photo a descriptive name" />
+								<label >Email:</label><br />
+								<input type="email" name="email" placeholder="example@gmail.com" />
 							</p>
 							<p>
-								<label>Feedback</label><br />
+								<label>Subject:</label><br />
+								<input type="text" name="title" placeholder="Subject" />
+							</p>
+							<p>
+								<label>Feedback:</label><br />
 								<textarea name="description" rows="17" cols="100"
-									placeholder="Adding a rich description will help with search results"></textarea>
+									placeholder="This will help us greatly for the development of the game"></textarea>
 							</p>
 						</td>
 					</tr>
