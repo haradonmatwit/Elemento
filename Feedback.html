@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="./style/homeStyles.css" />
+	<link rel="stylesheet" href="./style/navbarStyles.css" />
+	<link rel="stylesheet" href="./style/feedbackStyle.css" />
+
+	<link rel="stylesheet" href="./index.css" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact</title>
+</head>
+
+<header id="navbar" >
+	<nav class="navbar-container container">
+		<a href="./Home.html" class="home-link">
+			<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
+			ELEMENT
+			<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
+		</a>
+		<div id="navbar-menu" aria-labelledby="navbar-toggle">
+			<ul class="navbar-links">
+				<!-- <li class="navbar-item">
+							<a class="navbar-link" href="./Game.html">
+								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+								Game</a
+							>
+						</li> -->
+				<li class="navbar-item">
+					<a class="navbar-link" href="./Tutorial.html">
+						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
+							alt="This will display an animated GIF" />
+						Tutorial</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="./Feedback.html">
+						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
+							alt="This will display an animated GIF" />
+						Contact</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-link" href="./About.html">
+						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
+							alt="This will display an animated GIF" />
+						About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<body>
+	<section>
+		<form name="test" method="post" action="./process.php">
+			<fieldset>
+				<legend>FEEDBACK</legend>
+				<table>
+					<tr>
+						<td colspan="2">
+							<p>
+								<label>Subject</label><br />
+								<input type="text" name="title" placeholder="Give your photo a descriptive name" />
+							</p>
+							<p>
+								<label>Feedback</label><br />
+								<textarea name="description" rows="20" cols="100"
+									placeholder="Adding a rich description will help with search results"></textarea>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+
+							<div class="box-date-time">
+								<p>
+									<label>Date Taken: <br />
+										<input type="date" name="date" />
+								</p>
+								<p>
+									<label>Time Taken: <br />
+										<input type="time" name="time" />
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="rectangle-date-time">
+								<input type="submit" class="rounded"> <input type="reset" value="Clear Form" class="rounded">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</section>
+</body>
+
+
+<footer class="background">
+	<p class="text-footer">Copyright ©-All rights are reserved</p>
+	<p>By Wentworth Institute of Technology students: Randy Batista, Tiffany Phan, Sabrina Ahmed, and Meagan Haradon</p>
+</footer>
+
+</html>
+<!-- insert our images  -->

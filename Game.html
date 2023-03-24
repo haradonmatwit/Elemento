@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="./style/homeStyles.css" />
+		<link rel="stylesheet" href="./style/homeStyles.css" />
 		<link rel="stylesheet" href="./style/navbarStyles.css" />
 		<link rel="stylesheet" href="./style/gameStyles.css" />
+		<link rel="stylesheet" href="./style/gameButton.css" />
 		<link rel="stylesheet" href="./index.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,10 +13,13 @@
 		<title>Game</title>
 	</head>
 	<script></script>
-	<body class="game-screen">
-		<header id="navbar">
+
+	<!-- <header id="navbar">
 			<nav class="navbar-container container">
 				<a href="./Home.html" class="home-link">
+					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
+					ELEMENT
+					<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
 					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
 					ELEMENT
 					<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
@@ -45,12 +50,38 @@
 								About</a
 							>
 						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Game.html">
+								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+								Game</a
+							>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Tutorial.html">
+								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+								Tutorial</a
+							>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Contact.html">
+								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+								Contact</a
+							>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./About.html">
+								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+								About</a
+							>
+						</li>
 					</ul>
-				</div>
-			</nav>
-		</header>
-
+			
+	</div>
+	</nav>
+	</header> -->
+	<body class="game-screen">
 		<h1 class="gametab-title">ELEMENTO</h1>
+
 		<canvas></canvas>
 		<!-- <script
 		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
@@ -58,6 +89,13 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"
 		></script> -->
+		<script src="./js/utils.js"></script>
+		<script src="./js/data/collisions.js"></script>
+		<script src="./js/classes/CollisionBlock.js"></script>
+		<script src="./js/classes/Sprite.js"></script>
+		<script src="./js/classes/Player.js"></script>
+		<script src="./js/eventListeners.js"></script>
+		<script src="./index.js"></script>
 		<script src="./js/utils.js"></script>
 		<script src="./js/data/collisions.js"></script>
 		<script src="./js/classes/CollisionBlock.js"></script>
@@ -73,4 +111,9 @@
 			to overcome obstacles within these ruins, and reach the treasure!
 		</p> -->
 	</body>
+	<footer class="game-footer">
+		<div classes="go-back-btn">
+			<button type="button" class="gameBtn2" role="button" onclick="window.location.href='./Home.html';"><- Go Back</button>
+		</div>
+	</footer>
 </html>
