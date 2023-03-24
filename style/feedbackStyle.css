@@ -79,7 +79,7 @@ input[name='time'] {
 }
 
 .box-date-time {
-	border-bottom: 1pt solid #4d3d29;
+	/* border-bottom: 1pt solid #4d3d29; */
 	padding-bottom: 1em;
 }
 
