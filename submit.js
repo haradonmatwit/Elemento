@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok) {
             alert("Feedback submitted successfully.");
             form.reset();
+            
         } else {
             alert("There was an issue submitting your feedback. Please try again.");
         }

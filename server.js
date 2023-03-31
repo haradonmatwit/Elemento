@@ -18,7 +18,10 @@ db.serialize(() => {
         timeTaken TIME
     )`);
 });
-
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/Home.html');
+  });
+  
 app.post("/submit-feedback", (req, res) => {
     const { email, subject, feedback } = req.body;
     const dateTaken = new Date().toISOString().slice(0, 10);
@@ -37,5 +40,5 @@ stmt.finalize();
 });
 
 app.listen(3000, () => {
-console.log("Server is running on http://localhost:3000/Feedback.html");
+console.log("Server is running on http://localhost:3000");
 });
