@@ -1,0 +1,9 @@
+CREATE TABLE form (
+email VARCHAR(255),
+subject VARCHAR(15),
+feedback VARCHAR(255)
+dateTaken DATE,
+timeTaken TIME
+)
+
+INSERT INTO form (email, subject, feedback, dateTaken, timeTaken) VALUES
