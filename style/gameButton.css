@@ -1,5 +1,5 @@
 .gameBtn1 {
-	background-image: url('./../img/PlayButton/Play_Button1_580x200.png');
+	background-image: url('./../img/PlayButton/Play_Button1_580x180.png');
 
 	border: 2px solid #422800;
 	border-radius: 40px;
@@ -18,46 +18,50 @@
 	-webkit-user-select: none;
 	touch-action: manipulation;
 	width: 580px;
-	height: 200px;
+	height: 180px;
 }
 
 .gameBtn1:hover {
-	background-image: url('./../img/PlayButton/Play_Button2_580x200.png');
+	background-image: url('./../img/PlayButton/Play_Button2_580x180.png');
 }
 
 .gameBtn1:active {
-	background-image: url('./../img/PlayButton/Play_Button1_580x200.png');
+	background-image: url('./../img/PlayButton/Play_Button1_580x180.png');
 	box-shadow: #422800 2px 2px 0 0;
 	transform: translate(2px, 2px);
 }
 
 .gameBtn2 {
-	background-color: #f0dac4;
+	background-image: url('./../img/PlayButton/Back_Button1_300x90.png');
 	border: 2px solid #422800;
-	border-radius: 100px;
+	border-radius: 20px;
 	box-shadow: #422800 12px 12px 0 0;
 	color: #422800;
 	cursor: pointer;
 	display: inline-block;
-	font-weight: 600;
-	font-size: 30px;
+	/* font-weight: 600;
+	font-size: 30px; */
 	padding: 0 18px;
 	line-height: 50px;
+
+	position: fixed;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
-	width: 230px;
-	height: 55px;
+	width: 300px;
+	height: 90px;
+	bottom: 23px;
+	right: 605px;
 }
 
 .gameBtn2:hover {
-	background-color: #ededed;
+	background-image: url('./../img/PlayButton/Back_Button2_300x90.png');
 }
 
 .gameBtn2:active {
-	background-color: #ff6565;
+	background-image: url('./../img/PlayButton/Back_Button1_300x90.png');
 	box-shadow: #422800 2px 2px 0 0;
 	transform: translate(2px, 2px);
 }
