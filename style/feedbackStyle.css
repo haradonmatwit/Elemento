@@ -1,107 +1,67 @@
-/* main article styling */
+.container {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 50px auto;
+	padding: 20px;
+	width: 80%;
+}
 
-legend {
+.home-link,
+.navbar-link {
+	padding: 30px;
+}
+
+.container h1 {
 	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
-	/* background-color: #4d3d29; */
-	background-color: transparent;
-	height: 30px;
-	color: black;
+}
+
+.container fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container legend {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.container .row {
+	display: flex;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.container .col-25 {
+	flex: 25%;
+}
+
+.container .col-75 {
+	flex: 75%;
+}
+
+.container input[type='text'],
+.container input[type='email'],
+.container textarea {
+	border-radius: 5px;
+	border: 1px solid #a10101;
+	padding: 10px;
+	width: 100%;
+}
+
+.container button[type='submit'] {
+	background-color: #333;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
 	text-transform: uppercase;
-	width: 100%;
-	margin: 0;
-	padding: 5px 0;
-}
-fieldset {
-	margin: 0;
-	padding: 0;
-	background-color: #d5b69a;
-	width: 100%;
-	border: none;
-}
-form p {
-	margin-top: 0.5em;
 }
 
-label {
-	font-size: 20px;
-	font-weight: 600;
-}
-section {
-	margin-bottom: 1em;
-	padding: 0;
-	width: 100%;
-}
-
-.table-feedback {
-	margin-top: 50px;
-}
-/*Table Formating*/
-table {
-	border: collapse;
-	border-spacing: 0;
-	width: 100%;
-	margin: 0 auto;
-}
-table tbody td {
-	line-height: 1.5em;
-	vertical-align: top;
-	padding: 0em 0.75em 0em 0.75em;
-}
-
-input[name='title'],
-textarea[name='description'] {
-	width: 100%;
-	padding: 5px;
-}
-
-input[name='email'] {
-	width: 450px;
-}
-
-input[name='email'],
-input[name='title'],
-textarea[name='description'],
-input[name='date'],
-input[name='time'] {
-	background-color: #ededed;
-	font-size: 25px;
-	font-family: Elemento;
-	padding: 5px;
-}
-
-input[name='email'],
-input[name='title'],
-input[name='date'],
-input[name='time'] {
-	height: 35px;
-}
-
-.box-date-time {
-	/* border-bottom: 1pt solid #4d3d29; */
-	padding-bottom: 1em;
-}
-
-.rectangle-date-time {
-	/* background-color: #4d3d29; */
-	padding: 0.5em;
-	font-family: Elemento;
-	text-align: center;
-}
-
-.rounded {
-	border: none;
-	border-radius: 7px;
-	text-align: center;
-	font-weight: bold;
-	background-color: #005c80;
-	padding: 0.5em 0 0.5em 0;
-	margin: 0.3em;
-	width: 7em;
-	height: 3em;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-}
-.rounded:hover {
-	background-color: #ff4081;
+.container button[type='submit']:hover {
+	background-color: #555;
 }
