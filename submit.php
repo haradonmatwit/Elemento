@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = $_POST['message'];
 
     // do something with the data, like sending an email
-    $to = 'your-email@example.com';
+    $to = 'randy032003@gmail.com, phant9@wit.edu, ahmeds10@wit.edu, haradonm@wit.edu';
     $headers = 'From: ' . $email;
     $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message";
     mail($to, $subject, $body, $headers);
