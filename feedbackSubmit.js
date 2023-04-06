@@ -1,12 +1,28 @@
-document.getElementById("feedback-form").addEventListener("submit", function (event) {
-   event.preventDefault();
-   var form = event.target;
-   var formData = new FormData(form);
-   fetch('submit.php', {
-      method: 'POST',
-      body: formData
-   })
-      .then(response => console.log(response.text()))
-      .then(data => console.log(data))
-      .catch(error => console.error(error))
+document.addEventListener("DOMContentLoaded", () => {
+   const form = document.getElementById("feedback-form");
+   form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name = form.name.value;
+      const email = form.email.value;
+      const subject = form.subject.value;
+      const feedback = form.feedback.value;
+      const response = await fetch("/submit-feedback", {
+         method: "POST",
+         headers: {
+            "Content-Type": "application/json",
+         },
+         body: JSON.stringify({
+            name,
+            email,
+            subject,
+            feedback,
+         }),
+      });
+      if (response.ok) {
+         alert("Feedback submitted successfully.");
+         form.reset();
+      } else {
+         alert("There was an issue submitting your feedback. Please try again.");
+      }
+   });
 });
