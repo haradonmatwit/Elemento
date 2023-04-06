@@ -2,7 +2,7 @@ document.getElementById("feedback-form").addEventListener("submit", function (ev
    event.preventDefault();
    var form = event.target;
    var formData = new FormData(form);
-   fetch('./submit.php', {
+   fetch('submit.php', {
       method: 'POST',
       body: formData
    })
