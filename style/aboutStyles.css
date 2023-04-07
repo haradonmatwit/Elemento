@@ -1,3 +1,16 @@
+.title-about {
+	font-size: 90px;
+	text-align: center;
+	text-shadow: 2px 2px #5f5f5f;
+}
+
+.about-title-side1 {
+	color: #89cfeb;
+}
+.about-title-side2 {
+	color: #005c80;
+}
+
 .about-container {
 	width: 100%;
 	display:flex;
@@ -15,6 +28,7 @@
 	box-shadow: 2px 2px #5f5f5f;
 	text-shadow: 2px 2px #5f5f5f;
 }
+
 .logo-img-desc {
 	align-self: center;
 	margin-bottom: -70px;
@@ -32,19 +46,6 @@
 	display:flex;
 	flex: wrap;
 	justify-content: center;
-}
-
-.title-about {
-	font-size: 90px;
-	text-align: center;
-	text-shadow: 2px 2px #5f5f5f;
-}
-
-.about-title-side1 {
-	color: #89cfeb;
-}
-.about-title-side2 {
-	color: #005c80;
 }
 
 .background-first-section {
