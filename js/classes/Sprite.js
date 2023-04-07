@@ -34,6 +34,8 @@ class Sprite {
       }
     }
   }
+
+  // draw sprite on canvas
   draw() {
     if (!this.loaded) return
     const cropbox = {
@@ -60,6 +62,7 @@ class Sprite {
     this.updateFrames()
   }
 
+  // for animations
   play() {
     this.autoplay = true
   }
