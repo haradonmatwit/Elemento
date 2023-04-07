@@ -1,17 +1,11 @@
 .gameBtn1 {
 	background-image: url('./../img/PlayButton/Play_Button1_580x180.png');
 
-	border: 2px solid #422800;
+	border: 2px solid black;
 	border-radius: 40px;
-	box-shadow: #422800 12px 12px 0 0;
-	color: #422800;
+	box-shadow: black 12px 12px 0 0;
+	color: black;
 	cursor: pointer;
-	display: inline-block;
-	font-weight: 600;
-	font-size: 50px;
-	padding: 0 18px;
-	left: 50px;
-	line-height: 50px;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
@@ -38,13 +32,6 @@
 	box-shadow: #422800 12px 12px 0 0;
 	color: #422800;
 	cursor: pointer;
-	display: inline-block;
-	/* font-weight: 600;
-	font-size: 30px; */
-	padding: 0 18px;
-	line-height: 50px;
-
-	position: fixed;
 	text-align: center;
 	text-decoration: none;
 	user-select: none;
@@ -52,8 +39,6 @@
 	touch-action: manipulation;
 	width: 300px;
 	height: 90px;
-	bottom: 23px;
-	right: 605px;
 }
 
 .gameBtn2:hover {
