@@ -1,112 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link rel="stylesheet" href="./style/homeStyles.css" />
+		<link rel="stylesheet" href="./style/navbarStyles.css" />
+		<link rel="stylesheet" href="./style/feedbackStyle.css" />
 
-<head>
-	<link rel="stylesheet" href="./style/homeStyles.css" />
-	<link rel="stylesheet" href="./style/navbarStyles.css" />
-	<link rel="stylesheet" href="./style/feedbackStyle.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./submit_form.js" defer></script>
+		<title>Contact</title>
+	</head>
 
-	<link rel="stylesheet" href="./index.css" />
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<script src="./feedbackSubmit.js" defer></script>
-	<title>Contact</title>
-</head>
-
-<header id="navbar" >
-	<nav class="navbar-container">
-		<a href="./Home.html" class="home-link">
-			<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
-			ELEMENT
-			<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
-		</a>
-		<div id="navbar-menu" aria-labelledby="navbar-toggle">
-			<ul class="navbar-links">
-				<!-- <li class="navbar-item">
+	<header id="navbar">
+		<nav class="navbar-container">
+			<a href="./Home.html" class="home-link">
+				<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
+				ELEMENT
+				<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
+			</a>
+			<div id="navbar-menu" aria-labelledby="navbar-toggle">
+				<ul class="navbar-links">
+					<!-- <li class="navbar-item">
 							<a class="navbar-link" href="./Game.html">
 								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
 								Game</a
 							>
 						</li> -->
-				<li class="navbar-item">
-					<a class="navbar-link" href="./Tutorial.html">
-						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
-							alt="This will display an animated GIF" />
-						Tutorial</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="./Feedback.html">
-						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
-							alt="This will display an animated GIF" />
-						Feedback</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="./About.html">
-						<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20"
-							alt="This will display an animated GIF" />
-						About</a>
-				</li>
-			</ul>
+					<li class="navbar-item">
+						<a class="navbar-link" href="./Tutorial.html">
+							<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+							Tutorial</a
+						>
+					</li>
+					<li class="navbar-item">
+						<a class="navbar-link" href="./Feedback.html">
+							<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+							Feedback</a
+						>
+					</li>
+					<li class="navbar-item">
+						<a class="navbar-link" href="./About.html">
+							<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
+							About</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h1>Feedback Form</h1>
+			<form id="feedback-form">
+				<legend>Contact Information</legend>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="name">Name:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="name" name="name" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email:</label>
+					</div>
+					<div class="col-75">
+						<input type="email" id="email" name="email" required />
+					</div>
+				</div>
+
+				<legend>Feedback</legend>
+				<div class="row">
+					<div class="col-25">
+						<label for="subject">Subject:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="subject" name="subject" maxlength="20" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="feedback">Feedback:</label>
+					</div>
+					<div class="col-75">
+						<textarea id="feedback" name="feedback" required></textarea>
+					</div>
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
 		</div>
-	</nav>
-</header>
+	</main>
 
-<body>
-	<div class="container">
-		<h1>Feedback Form</h1>
-		<form id="feedback-form" method="post" action="/submit.php">
-	<fieldset>
-		<legend>Contact Information</legend>
-		<div class="row">
-			<div class="col-25">
-				<label for="name">Name:</label>
-			</div>
-			<div class="col-75">
-				<input type="text" id="name" name="name" required>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="email">Email:</label>
-			</div>
-			<div class="col-75">
-				<input type="email" id="email" name="email" required>
-			</div>
-		</div>
-	</fieldset>
-
-	<fieldset>
-		<legend>Feedback</legend>
-		<div class="row">
-			<div class="col-25">
-				<label for="subject">Subject:</label>
-			</div>
-			<div class="col-75">
-				<input type="text" id="subject" name="subject" maxlength="15" required>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-25">
-				<label for="feedback">Feedback:</label>
-			</div>
-			<div class="col-75">
-				<textarea id="feedback" name="feedback" required></textarea>
-			</div>
-		</div>
-	</fieldset>
-
-	<button type="submit">Submit</button>
-</form>
-	</div>
-
-	<footer class="background" style="text-align: center; color: #f0dac4;">
-	<p class="text-footer">Copyright ©-All rights are reserved</p>
-	<p>By Wentworth Institute of Technology students: Randy Batista, Tiffany Phan, Sabrina Ahmed, and Meagan Haradon</p>
-</footer>
-
-
-
-
+	<footer class="background" style="text-align: center; color: #f0dac4">
+		<p class="text-footer">Copyright ©-All rights are reserved</p>
+		<p>By Wentworth Institute of Technology students: Randy Batista, Tiffany Phan, Sabrina Ahmed, and Meagan Haradon</p>
+	</footer>
 </html>
 <!-- insert our images  -->
