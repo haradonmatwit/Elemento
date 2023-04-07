@@ -14,10 +14,15 @@ a {
 	font-family: Elemento;
 }
 
+a img {
+	width: 30px;
+	height: auto;
+	margin-right:4px;
+}
+
 .container {
 	max-width: 100%;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding:10px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -69,13 +74,6 @@ a {
 	background-color: var(--navbar-bg-contrast);
 }
 
-/* .navbar-logo {
-	
-
-	
-	
-} */
-
 .navbar-toggle {
 	cursor: pointer;
 	border: none;
@@ -91,12 +89,8 @@ a {
 .logo-img {
 	width: 50px;
 	height: 50px;
-	margin-top: 10px;
-	display: inline-block;
-	position: static;
-	margin-right: 40px;
-	margin-right: 0.5em;
-	position: static;
+	margin-right: 10px;
+	display: block;
 }
 
 #navbar-menu {
