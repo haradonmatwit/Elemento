@@ -1,31 +1,28 @@
-.game-footer {
-	padding-top: 20px;
-	padding-right: 20px;
-	display: flex;
-	justify-content: end;
-	align-items: end;
-	text-align: bottom;
-	top: 620px;
-}
-
-.gametab-title {
+.title-game {
+	font-size: 90px;
 	text-align: center;
-	font-size: 100px;
-	position: fixed;
-	right: 70%;
-	left: 30%;
-	padding-top: 50px;
+	text-shadow: 2px 2px #5f5f5f;
+	color: #ededed;
 }
 
 .game-screen {
-	margin: 0px;
 	background-color: #718383;
-	width: 100%;
 }
 
 .game-screen canvas {
-	padding: 0;
 	margin: 0px auto 0px;
-	position: fixed;
 	width: 100%;
+}
+
+.game-footer {
+	/* padding-top: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; */
+	width: 100%;
+	display:flex;
+	justify-content: end;
+	align-items: end;
 }
