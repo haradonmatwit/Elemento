@@ -1,0 +1,115 @@
+.title-tutorial {
+	font-size: 90px;
+	text-align: center;
+	text-shadow: 2px 2px #5f5f5f;
+}
+
+.tutorial-title-side1 {
+	color: #547e92;
+}
+
+.tutorial-title-side2 {
+	color: #bedce2;
+}
+
+.tutorial-first-container {
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.tutorial-desc {
+	display:flex;
+	text-align: center;
+	align-items: center;
+	font-size: 36px;
+	color: white;
+	background-color: #547e92;
+	padding: 40px;
+	width: 50%;
+	box-shadow: 2px 2px #5f5f5f;
+	text-shadow: 2px 2px #5f5f5f;
+}
+
+.logo-img-desc {
+	align-self: center;
+    margin-bottom: -60px;
+    width: 350px;
+}
+
+.logo-desc {
+	padding:60px;
+	width:50%;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sections {
+    background-color: #bedce2;
+    text-align: center;
+    padding: 15px 10px 10px;
+    color: #547e92;
+	text-shadow: 2px 2px #5f5f5f;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	padding: 10px;
+}
+
+.sections h1 {
+    font-size: 60px;
+}
+
+.sections p {
+    font-size: 24px;
+}
+
+.key {
+	width: 25%;
+	padding: 10px;
+    color: white;
+	text-shadow: 2px 2px #5f5f5f;
+    border-radius: 10px;
+    border:solid 4px #bedce2;
+    box-shadow: 2px 2px #5f5f5f;
+    margin: 10px;
+}
+
+.key img {
+	width: 120px;
+	height: 180px;
+	margin-bottom: 6px;
+    padding:10px;
+}
+
+.img {
+    display: flex;
+}
+
+.img .img-desc {
+    width: 180px;
+}
+
+.floor {
+	display:flex;
+	flex: wrap;
+	justify-content: center;
+}
+
+@media(max-width: 1000px) {
+	.tutorial-desc,
+	.logo-desc {
+		width: 100%;
+	}
+
+    .key {
+		width: 50%;
+	}
+}
