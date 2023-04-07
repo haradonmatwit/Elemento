@@ -4,8 +4,8 @@
 		<link rel="stylesheet" href="./style/homeStyles.css" />
 		<link rel="stylesheet" href="./style/navbarStyles.css" />
 		<link rel="stylesheet" href="./index.css" />
-		<link rel="stylesheet" href="./index.css" />
-		<link rel="stylesheet" href="tutorial.css"/>
+		<link rel="stylesheet" href="./style/tutorialStyles.css"/>
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,73 +17,195 @@
 				<a href="./Home.html" class="home-link">
 					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
 					ELEMENT
-					<img src="./img/gif/Web_Dev_Fire_Run.gif" width="30" height="45" alt="This will display an animated GIF" />
+					<img src="./img/gif/Air_Run_Right.gif" width="30" height="45" alt="This will display an animated GIF" />
 				</a>
 				<div id="navbar-menu" aria-labelledby="navbar-toggle">
 					<ul class="navbar-links">
-						<!-- <li class="navbar-item">
-							<a class="navbar-link" href="./Game.html">
-								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
-								Game</a
-							>
-						</li> -->
 						<li class="navbar-item">
-							<a class="navbar-link" href="./Tutorial.html">
-								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
-								Tutorial</a
-							>
+							<a class="navbar-link" href="./About.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								About
+							</a>
 						</li>
 						<li class="navbar-item">
 							<a class="navbar-link" href="./Feedback.html">
-								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
-								Feedback</a
-							>
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Feedback
+							</a>
 						</li>
 						<li class="navbar-item">
-							<a class="navbar-link" href="./About.html">
-								<img src="./img/gif/Web_Dev_Heart.gif" width="20" height="20" alt="This will display an animated GIF" />
-								About</a
-							>
+							<a class="navbar-link" href="./Tutorial.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Tutorial
+							</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-		<h1>Tutorial</h1>
-		<p>Press the right arrow key to move right</p>
-		<p>Press the left arrow key to move left</p>
-		<p>Press the up arrow key to jump over obstacles</p>
-		<p>Avoid as many obstacles as you can to win the game. But be careful about your heart status or else you start from the beginning!</p>
-	</body>
-	
-	<body class="game-screen">
-		<canvas></canvas>
-		<!-- <script
-		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
-		integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
-		crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-		></script> -->
-		<script src="./js/utils.js"></script>
-		<script src="./js/data/collisions.js"></script>
-		<script src="./js/classes/CollisionBlock.js"></script>
-		<script src="./js/classes/Sprite.js"></script>
-		<script src="./js/classes/Player.js"></script>
-		<script src="./js/eventListeners.js"></script>
-		<script src="./index.js"></script>
-		<script src="./js/utils.js"></script>
-		<script src="./js/data/collisions.js"></script>
-		<script src="./js/classes/CollisionBlock.js"></script>
-		<script src="./js/classes/Sprite.js"></script>
-		<script src="./js/classes/Player.js"></script>
-		<script src="./js/eventListeners.js"></script>
-		<script src="./index.js"></script>
 
-		<!-- <p>
-		Your search for treasure leads you to ancient ruins filled with
-			pure elemental energy. You feel a connection to this energy, and realize 
-			that you are able to harness it. Use the power of the four elements of nature 
-			to overcome obstacles within these ruins, and reach the treasure!
-		</p> -->
+		<img class="logo" src="./img/logo.png" />
+		<h1 class="title-tutorial"><span class="tutorial-title-side1">TUTO</span><span class="tutorial-title-side2">RIAL</span></h1>
+
+		<div class="tutorial-first-container">
+			<div class="logo-desc">
+				<img src="./img/gif/Air_Death_Right.gif" class="logo-img-desc">
+			</div>
+
+			<p class="tutorial-desc">
+				Avoid as many obstacles as you can to get through the ruins, 
+				but be very careful or else you will have to start over!
+			</p>
+		</div>
+
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
+		
+		<div class="sections">
+			<h1>ARROW KEYS</h1>
+			<p>Use the arrow buttons to navigate each level and reach the door to the next level!</p>
+		</div>
+
+		<section>
+			<div class="key">
+				<img src="./img/gif/Normal_Run_Left.gif" class="logo-img-desc">
+					<p>Left Arrow Key</p>
+					<p>Move Left</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Normal_Run_Right.gif" class="logo-img-desc">
+					<p>Right Arrow Key</p>
+					<p>Move Right</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Normal_Jump_Right.gif" class="logo-img-desc">
+					<p>Up Arrow Key</p>
+					<p>Jump Up</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Normal_Enter.gif" class="logo-img-desc">
+					<p>Down Arrow Key</p>
+					<p>Enter Door</p>
+			</div>
+		</section>
+
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
+
+		<div class="sections">
+			<h1>LETTER KEYS</h1>
+			<p>Switch between the four elemental states unlocked individually along the way to navigate obstacles!</p>
+		</div>
+
+		<section>
+			<div class="key">
+				<img src="./img/gif/Water_Idle_Right.gif" class="logo-img-desc">
+					<p>W Key</p>
+					<p>Switch to Water</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Air_Idle_Right.gif" class="logo-img-desc">
+					<p>A Key</p>
+					<p>Switch to Air</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Fire_Idle_Right.gif" class="logo-img-desc">
+					<p>S Key</p>
+					<p>Switch to Fire</p>
+			</div>
+
+			<div class="key">
+				<img src="./img/gif/Earth_Idle_Right.gif" class="logo-img-desc">
+					<p>D Key</p>
+					<p>Switch to Earth</p>
+			</div>
+		</section>
+
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
+
+		<div class="sections">
+			<h1>ELEMENTAL OBSTACLES</h1>
+			<p>There are numerous elemental obstacles within each level, use the power of the elements accordingly to overcome them!</p>
+		</div>
+
+		<section>
+			<div class="key">
+				<div class="img">
+					<img src="./img/gif/Water_Idle_Right.gif" class="logo-img-desc">
+					<img src="./img/gif/Fire_Pit_Tile.gif" class="img-desc">
+				</div>
+
+				<p>Pass fire pits by extinguishing them with water</p>
+			</div>
+
+			<div class="key">
+				<div class="img">
+					<img src="./img/gif/Air_Idle_Right.gif" class="logo-img-desc">
+					<img src="./img/gif/Water_Pit_Tile.gif" class="img-desc">
+				</div>
+						
+				<p>Cross water pits by freezing the water with air</p>
+			</div>
+
+			<div class="key">
+				<div class="img">
+					<img src="./img/gif/Fire_Idle_Right.gif" class="logo-img-desc">
+					<img src="./img/gif/Ice_2.png" class="img-desc">
+				</div>
+						
+				<p>Clear ice blocks on the path by melting them with fire</p>
+			</div>
+		</section>
+
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
+
+		<div class="sections">
+			<h1>REGULAR OBSTACLES</h1>
+			<p>Besides elemental obstacles, there are also regular obstacles!</p>
+		</div>
+		
+		<section>
+			<div class="key">
+				<div class="img">
+					<img src="./img/gif/Water_Idle_Right.gif" class="logo-img-desc">
+					<img src="./img/gif/Spike_Pit.png" class="img-desc">
+				</div>
+
+				<p>There are pits full of spikes, avoid them at all costs by jumping over them!</p>
+			</div>
+		</section>
+
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
+
+		<footer class="background">
+			<p class="text-footer">
+				Copyright © All Rights are Reserved
+				<br/>
+				By Wentworth Institute of Technology students: Sabrina Ahmed, Tiffany Phan, Randy Batista, and Meagan Haradon
+			</p>
+		</footer>
 	</body>
 </html>

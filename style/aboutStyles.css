@@ -1,139 +1,114 @@
-.about-desc {
-	padding-top: 20px;
-	position: absolute;
-	padding-left: 40px;
-	display: flex;
-	font-size: 26px;
-	font-weight: bold;
-	text-align: left;
-	justify-content: start;
-	width: 700px;
+.title-about {
+	font-size: 90px;
+	text-align: center;
+	text-shadow: 2px 2px #5f5f5f;
+}
+
+.about-title-side1 {
+	color: #89cfeb;
+}
+.about-title-side2 {
+	color: #005c80;
+}
+
+.about-container {
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
 }
 .desc-about-page-div {
-	color: #fbeee0;
+	display:flex;
+	text-align: center;
+	align-items: center;
+	font-size: 24px;
+	color: white;
+	background-color: #005c80;
+	padding: 40px;
+	width:50%;
+	box-shadow: 2px 2px #5f5f5f;
+	text-shadow: 2px 2px #5f5f5f;
 }
+
 .logo-img-desc {
-	width: 270px;
-	transform: scaleX(-1);
+	align-self: center;
+	margin-bottom: -70px;
 }
+
 .logo-desc {
-	text-align: right;
-	padding-right: 200px;
-}
-.header h1 {
-	font-size: 50px;
-	padding-left: 28px;
-	text-align: center;
-}
-
-.floor-img-desc {
-	border-top: 5px solid;
-	color: #fbeee0;
-	width: 100%;
-	position: absolute;
-	bottom: -40px;
-	z-index: -1;
-}
-
-.about-tile-side2 {
-	color: #3b2f1f;
-}
-/* the format for the header pic */
-.first-section {
-	padding-top: 50px;
-	font-size: 35px;
-	display: block;
+	padding:60px;
+	width:50%;
+	display:flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.about-box2 {
-	width: 100%;
-	height: 270px;
-	position: absolute;
-	background-color: #005c80;
-	margin-top: 40px;
-	box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.8), 0px 10px 10px rgba(0, 0, 0, 0.8);
-}
-/* text for the about us */
-.text-big {
-	font-weight: bold;
-	font-size: 50px;
-	text-align: center;
-}
-/* format for the text under about us */
-.text-small {
-	font-size: 20px;
-	text-align: center;
 }
 
-.about-box1 {
-	width: 740px;
-	height: 646px;
-	z-index: -1;
-	position: absolute;
-	background-color: #8a2828;
-	box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.5) inset;
+.floor {
+	display:flex;
+	flex: wrap;
+	justify-content: center;
 }
 
-.about-box3 {
-	width: 100%;
-	height: 270px;
-	position: absolute;
-	top: -20px;
-	background-color: #5f5f5f;
-	z-index: -1;
+.background-first-section {
+	padding: 40px;
+	background-color: #89cfeb;
+	box-shadow: 2px 2px #5f5f5f;
+	text-align: center;
+	text-shadow: 2px 2px #5f5f5f;
 }
 
-.about-box8 {
-	width: 100%;
-	height: 68px;
-	position: absolute;
-	background-color: #005c80;
-	box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.8);
+.background-first-section h1 {
+	color:#005c80;
+	font-size: 60px;
 }
-/* this will make the people either in a line horizontally or in a line vertically */
-#profiles {
-	margin: 34px;
-	margin-top: 0px;
+
+.background-first-section p {
+	color: white;
+	font-size: 24px;
+}
+
+.profile-second-section {
+	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
 }
 
-/* padding for pices */
-#profiles .pic {
-	padding-left: 155px;
-	border-radius: 28px;
+.profile {
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 2px 2px #5f5f5f;
 }
-/* this is to make the image area circular not square */
-#profiles .pic img {
-	top: 10px;
-	height: 150px;
-	margin: auto;
+
+.profile img {
+	width: 180px;
+	height: 180px;
+	margin: 10px;
 	border-radius: 100px;
-}
-
-.pic p {
-	display: block;
-}
-
-#profiles .pic p {
-	text-align: center;
-}
-
-.center {
-	text-align: center;
+	border:solid 4px #005c80;
+	box-shadow: 2px 2px #5f5f5f;
 }
 
 .text-footer {
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px;
 	font-size: 15px;
 	display: flex;
 	justify-content: center;
+	background-color: hsl(0, 0%, 15%);
+	box-shadow: 2px 2px #5f5f5f;
+	color: white;
 }
-@media screen and (max-width: 650px) {
-	.column {
+
+@media(max-width: 1000px) {
+	.desc-about-page-div,
+	.logo-desc {
 		width: 100%;
-		display: block;
+	}
+
+	.profile {
+		width: 50%;
 	}
 }

@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="./style/homeStyles.css" />
-		<link rel="stylesheet" href="./style/homeStyles.css" />
 		<link rel="stylesheet" href="./style/navbarStyles.css" />
 		<link rel="stylesheet" href="./style/gameStyles.css" />
 		<link rel="stylesheet" href="./style/gameButton.css" />
@@ -13,39 +12,42 @@
 		<title>Game</title>
 	</head>
 	<script></script>
-	
+
 	<body class="game-screen">
-		<h1 class="gametab-title">ELEMENTO</h1>
+		<img class="logo" src="./img/logo.png" />
+		<h1 class="title-game">ELEMENTO</h1>
+		<!-- classes -->
+        <script src="js/classes/CollisionBlock.js"></script>
+        <script src="js/classes/Sprite.js"></script>
+        <script src="js/classes/Player.js"></script>
 
-		<canvas></canvas>
-		<!-- <script
-		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
-		integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
-		crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-		></script> -->
-		<script src="./js/utils.js"></script>
-		<script src="./js/data/collisions.js"></script>
-		<script src="./js/classes/CollisionBlock.js"></script>
-		<script src="./js/classes/Sprite.js"></script>
-		<script src="./js/classes/Player.js"></script>
-		<script src="./js/eventListeners.js"></script>
-		<script src="./index.js"></script>
-		<script src="./js/utils.js"></script>
-		<script src="./js/data/collisions.js"></script>
-		<script src="./js/classes/CollisionBlock.js"></script>
-		<script src="./js/classes/Sprite.js"></script>
-		<script src="./js/classes/Player.js"></script>
-		<script src="./js/eventListeners.js"></script>
-		<script src="./index.js"></script>
+        <!-- player -->
+        <script src="js/eventListeners.js"></script>
+        <script src="js/elements.js"></script>
+        <script src="js/player.js"></script>
 
-		<!-- <p>
-		Your search for treasure leads you to ancient ruins filled with
-			pure elemental energy. You feel a connection to this energy, and realize 
-			that you are able to harness it. Use the power of the four elements of nature 
-			to overcome obstacles within these ruins, and reach the treasure!
-		</p> -->
+        <!-- levels -->
+        <script src="js/levels/utils.js"></script>
+
+        <!-- maps -->
+        <script src="js/levels/maps/map1.js"></script>
+        <script src="js/levels/maps/map2.js"></script>
+        <script src="js/levels/maps/map3.js"></script>
+        <script src="js/levels/maps/map4.js"></script>
+        <script src="js/levels/maps/map5.js"></script>
+
+        <!-- collisions -->
+        <script src="js/levels/collisions/collisions1.js"></script>
+        <script src="js/levels/collisions/collisions2.js"></script>
+        <script src="js/levels/collisions/collisions3.js"></script>
+        <script src="js/levels/collisions/collisions4.js"></script>
+        <script src="js/levels/collisions/collisions5.js"></script>
+
+        <!-- game window -->
+        <canvas></canvas>
+        <script src="index.js"></script>
 	</body>
+
 	<footer class="game-footer">
 		<div classes="go-back-btn">
 			<button type="button" class="gameBtn2" role="button" onclick="window.location.href='./Home.html';"></button>

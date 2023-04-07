@@ -15,8 +15,14 @@ class Player extends Sprite {
       bottom: this.position.y + this.height,
     }
     this.gravity = 1
-    // this.imageSrc = imageSrc
     this.collisionBlocks = collisionBlocks
+
+    // player character's elements
+    this.normalElement = true
+    this.fireElement = false
+    this.waterElement = false
+    this.airElement = false
+    this.earthElement = false
   }
 
   update() {
@@ -40,12 +46,14 @@ class Player extends Sprite {
     //   this.hitbox.width,
     //   this.hitbox.height
     // )
+
     this.checkForVerticalCollisions()
 
     // obstacle collisions
     this.checkForSpikeCollisions()
     this.checkForFireCollisions()
     this.checkForWaterCollisions()
+    this.checkForIceCollisions()
   }
 
   handleInput(keys) {
@@ -65,6 +73,7 @@ class Player extends Sprite {
     }
   }
 
+  // switch between sprite animations
   switchSprite(name) {
     if (this.image === this.animations[name].image) return
     this.currentFrame = 0
@@ -101,14 +110,14 @@ class Player extends Sprite {
         this.hitbox.position.y <=
           collisionBlock.position.y + collisionBlock.height
       ) {
-        // collision on x axis going to the left
+        // collision on x axis going left
         if (this.velocity.x < -0) {
           const offset = this.hitbox.position.x - this.position.x
           this.position.x =
             collisionBlock.position.x + collisionBlock.width - offset + 0.01
           break
         }
-
+        // collision on x axis going right
         if (this.velocity.x > 0) {
           const offset =
             this.hitbox.position.x - this.position.x + this.hitbox.width
@@ -139,6 +148,7 @@ class Player extends Sprite {
         this.hitbox.position.y <=
           collisionBlock.position.y + collisionBlock.height
       ) {
+        // collision on y axis going upwards
         if (this.velocity.y < 0) {
           this.velocity.y = 0
           const offset = this.hitbox.position.y - this.position.y
@@ -147,6 +157,7 @@ class Player extends Sprite {
           break
         }
 
+        // collision on y axis going downwards
         if (this.velocity.y > 0) {
           this.velocity.y = 0
           const offset =
@@ -173,10 +184,9 @@ class Player extends Sprite {
         this.hitbox.position.y <=
           spike.position.y + spike.height
       ) {
+        // player dies regardless of element
         player.velocity.x = 0
         player.velocity.y = 0
-        level++
-        if (level === 2) level = 1
         levels[level].init()
         player.switchSprite('idleRight')
         player.preventInput = false
@@ -200,14 +210,17 @@ class Player extends Sprite {
         this.hitbox.position.y <=
           fire.position.y + fire.height
       ) {
-        player.velocity.x = 0
-        player.velocity.y = 0
-        level++
-        if (level === 2) level = 1
-        levels[level].init()
-        player.switchSprite('idleRight')
-        player.preventInput = false
-        return
+       if (this.waterElement) { // if player is water, remove fire
+          fires.splice(i, 1)
+          break
+        } else { // otherwise player dies
+          this.velocity.x = 0
+          this.velocity.y = 0
+          levels[level].init()
+          this.switchSprite('idleRight')
+          this.preventInput = false
+          break
+        }
       }
     }
   }
@@ -227,14 +240,82 @@ class Player extends Sprite {
         this.hitbox.position.y <=
           water.position.y + water.height
       ) {
-        player.velocity.x = 0
-        player.velocity.y = 0
-        level++
-        if (level === 2) level = 1
-        levels[level].init()
-        player.switchSprite('idleRight')
-        player.preventInput = false
-        return
+        if (player.airElement) { // if player is air, freeze water
+          waters.splice(i, 1) // remove water and replace with ice
+          ices.push(
+            new Sprite({
+              position: {
+                x: water.position.x,
+                y: water.position.y,
+              },
+              imageSrc: './img/obstacles/iceTile.png',
+              currentFrame: 0,
+              autoplay: false,
+            }),
+          )
+        } else { // otherwise player dies
+          player.velocity.x = 0
+          player.velocity.y = 0
+          levels[level].init()
+          player.switchSprite('idleRight')
+          player.preventInput = false
+          return
+        }
+      }
+    }
+  }
+
+  checkForIceCollisions() {
+    for (let i = 0; i < ices.length; i++) {
+      const ice = ices[i]
+
+      // check if player hits the water
+      if (
+        this.hitbox.position.x <=
+          ice.position.x + ice.width &&
+        this.hitbox.position.x + this.hitbox.width >=
+          ice.position.x &&
+        this.hitbox.position.y + this.hitbox.height >=
+          ice.position.y &&
+        this.hitbox.position.y <=
+          ice.position.y + ice.height
+      ) {
+        if (this.fireElement) { // if player is fire, remove ice
+          ices.splice(i, 1)
+          return
+        }
+        else { // otherwise player does nothing to the ice
+          if (this.velocity.y < 0) {
+            this.velocity.y = 0
+            const offset = this.hitbox.position.y - this.position.y
+            this.position.y =
+            ice.position.y + ice.height - offset
+            break
+          }
+  
+          if (this.velocity.y > 0) {
+            this.velocity.y = 0
+            const offset =
+              this.hitbox.position.y - this.position.y + this.hitbox.height
+            this.position.y = ice.position.y - offset
+            break
+          }
+
+          if (this.velocity.x < -0) {
+            const offset = this.hitbox.position.x - this.position.x
+            this.position.x =
+            ice.position.x + ice.width - offset
+            break
+          }
+          
+          if (this.velocity.x > 0) {
+            const offset =
+              this.hitbox.position.x - this.position.x + this.hitbox.width
+            this.position.x = ice.position.x - offset
+            break
+          }
+          return
+        }
       }
     }
   }
