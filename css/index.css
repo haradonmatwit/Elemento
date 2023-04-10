@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+@font-face {
+	font-family: Elemento;
+	src: url('./../font/Elemento-Regular.otf');
+}
+
+body {
+	font-family: Elemento;
+	font-family: Elemento;
+	background-color: #718383;
+	line-height: 1.5;
+}
+
+.logo {
+	width: 200px;
+	display: block;
+	margin: 20px auto 20px;
+}
+
+.title {
+	font-size: 90px;
+	text-align: center;
+	text-shadow: 2px 2px #5f5f5f;
+	color: #ededed;
+}
+
+.text-footer {
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	background-color: hsl(0, 0%, 15%);
+	box-shadow: 2px 2px #5f5f5f;
+	color: white;
+}
+
+.floor {
+	display:flex;
+	flex: wrap;
+	justify-content: center;
+}

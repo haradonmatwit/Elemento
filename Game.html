@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="./style/homeStyles.css" />
-		<link rel="stylesheet" href="./style/navbarStyles.css" />
-		<link rel="stylesheet" href="./style/gameStyles.css" />
-		<link rel="stylesheet" href="./style/gameButton.css" />
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/gameStyles.css" />
+		<link rel="stylesheet" href="./css/gameButton.css" />
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
 		<title>Game</title>
 	</head>
-	<script></script>
-
-	<body class="game-screen">
+    
+	<body>
+        <!-- logo and title -->
 		<img class="logo" src="./img/logo.png" />
-		<h1 class="title-game">ELEMENTO</h1>
+		<h1 class="title">ELEMENTO</h1>
+
 		<!-- classes -->
-        <script src="js/classes/CollisionBlock.js"></script>
-        <script src="js/classes/Sprite.js"></script>
-        <script src="js/classes/Player.js"></script>
+        <script src="./js/classes/CollisionBlock.js"></script>
+        <script src="./js/classes/Sprite.js"></script>
+        <script src="./js/classes/Player.js"></script>
 
         <!-- player -->
-        <script src="js/eventListeners.js"></script>
-        <script src="js/elements.js"></script>
-        <script src="js/player.js"></script>
+        <script src="./js/eventListeners.js"></script>
+        <script src="./js/elements.js"></script>
+        <script src="./js/player.js"></script>
 
         <!-- levels -->
-        <script src="js/levels/utils.js"></script>
+        <script src="./js/levels/utils.js"></script>
 
         <!-- maps -->
-        <script src="js/levels/maps/map1.js"></script>
-        <script src="js/levels/maps/map2.js"></script>
-        <script src="js/levels/maps/map3.js"></script>
-        <script src="js/levels/maps/map4.js"></script>
-        <script src="js/levels/maps/map5.js"></script>
+        <script src="./js/levels/maps/map1.js"></script>
+        <script src="./js/levels/maps/map2.js"></script>
+        <script src="./js/levels/maps/map3.js"></script>
+        <script src="./js/levels/maps/map4.js"></script>
+        <script src="./js/levels/maps/map5.js"></script>
 
         <!-- collisions -->
-        <script src="js/levels/collisions/collisions1.js"></script>
-        <script src="js/levels/collisions/collisions2.js"></script>
-        <script src="js/levels/collisions/collisions3.js"></script>
-        <script src="js/levels/collisions/collisions4.js"></script>
-        <script src="js/levels/collisions/collisions5.js"></script>
+        <script src="./js/levels/collisions/collisions1.js"></script>
+        <script src="./js/levels/collisions/collisions2.js"></script>
+        <script src="./js/levels/collisions/collisions3.js"></script>
+        <script src="./js/levels/collisions/collisions4.js"></script>
+        <script src="./js/levels/collisions/collisions5.js"></script>
 
         <!-- game window -->
         <canvas></canvas>
-        <script src="index.js"></script>
+        <script src="./js/game.js"></script>
 	</body>
 
+    <!-- footer -->
 	<footer class="game-footer">
 		<div classes="go-back-btn">
 			<button type="button" class="gameBtn2" role="button" onclick="window.location.href='./Home.html';"></button>

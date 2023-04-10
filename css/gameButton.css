@@ -50,6 +50,7 @@
 	box-shadow: #422800 2px 2px 0 0;
 	transform: translate(2px, 2px);
 }
+
 @media (min-width: 768px) {
 	.gameBtn1,
 	.gameBtn2 {

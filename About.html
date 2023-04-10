@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="./style/homeStyles.css" />
-		<link rel="stylesheet" href="./style/navbarStyles.css" />
-		<link rel="stylesheet" href="./style/aboutStyles.css" />
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./css/navbarStyles.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/aboutStyles.css" />
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>About</title>
 	</head>
 
+	<body>
+		<!-- navbar -->
+		<header id="navbar">
+			<nav class="navbar-container container">
+				<a href="./Home.html" class="home-link">
+					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
+					ELEMENT
+					<img src="./img/gif/Water_Run_Right.gif" width="30" height="45" alt="This will display an animated GIF" />
+				</a>
+				<div id="navbar-menu" aria-labelledby="navbar-toggle">
+					<ul class="navbar-links">
+						<li class="navbar-item">
+							<a class="navbar-link" href="./About.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								About
+							</a>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Feedback.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Feedback
+							</a>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Tutorial.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Tutorial
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-	<header id="navbar">
-		<nav class="navbar-container container">
-			<a href="./Home.html" class="home-link">
-				<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
-				ELEMENT
-				<img src="./img/gif/Water_Run_Right.gif" width="30" height="45" alt="This will display an animated GIF" />
-			</a>
-			<div id="navbar-menu" aria-labelledby="navbar-toggle">
-				<ul class="navbar-links">
-					<li class="navbar-item">
-						<a class="navbar-link" href="./About.html">
-							<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-							About
-						</a>
-					</li>
-					<li class="navbar-item">
-						<a class="navbar-link" href="./Feedback.html">
-							<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-							Feedback
-						</a>
-					</li>
-					<li class="navbar-item">
-						<a class="navbar-link" href="./Tutorial.html">
-							<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-							Tutorial
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<body class="desc-logo" style="color: #fbeee0;">
+		<!-- logo and title -->
 		<img class="logo" src="./img/logo.png" />
-		<h1 class="title-about"><span class="about-title-side1">ABOUT E</span><span class="about-title-side2">LEMENTO</span></h1>
+		<h1 class="title"><span class="about-title-side1">ABOUT E</span><span class="about-title-side2">LEMENTO</span></h1>
+		
+		<!-- content -->
 		<div class="about-container">
-			<div class="desc-about-page-div">
-				<p class="about-desc">This game is for a Web Development Final Project in which Team STRM members Randy, Meagan, 
+			<div class="about-desc">
+				<p class="info-desc">This game is for a Web Development Final Project in which Team STRM members Randy, Meagan, 
 					Tiffany and Sabrina created a game based on a version of Fireboy and Watergirl they all played when they were
 					younger and enjoyed so much as kids. This game was developed as they reminisced their youth staying home playing 
 					simple video games that would give their home computers viruses, as well as playing gameboy games. However, some 
@@ -63,60 +67,62 @@
 			</div>
 		</div>
 
+		<!-- divider -->
 		<div class="floor">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 		</div>
 
-		<!-- <div class="about-box2"></div> -->
-		<section class="background-first-section">
+		<!-- content -->
+		<section class="contact-section">
 			<h1>CONTACT INFORMATION</h1>
 			<p>Below you will get to know the team members of the development team for Elemento!</p>
 		</section>
 
-		<section class="profile-second-section">
-				<div class="profile">
-					<img src="./img/contactInfo/discoRandy.png" alt="picture goes here">
+		<section class="profile-section">
+			<div class="profile">
+				<img src="./img/about/discoRandy.png" alt="picture goes here">
 
-					<p class="center">
-						<p>Randy Batista</p>
-						<p>batistar2@wit.edu </p>
-					</p>
-				</div>
+				<p class="center">
+					<p>Randy Batista</p>
+					<p>batistar2@wit.edu </p>
+				</p>
+			</div>
 
-					<div class="profile">
-						<img src="./img/contactInfo/dogTiffany.jpg" alt="picture goes here">
-						<p class="center">
-							<p>Tiffany Phan</p>
-							<p>phant9@wit.edu</p>
-						</p>
-					</div>
+			<div class="profile">
+				<img src="./img/about/dogTiffany.jpg" alt="picture goes here">
+				<p class="center">
+					<p>Tiffany Phan</p>
+					<p>phant9@wit.edu</p>
+				</p>
+			</div>
 
-					<div class="profile">
-						<img src="./img/contactInfo/dogSandwich.jpg" alt="picture goes here">
-						<p class="center">
-							<p>Sabrina Ahmed</p>
-							<p>ahmeds10@wit.edu</p>
-						</p>
-					</div>
+			<div class="profile">
+				<img src="./img/about/dogSandwich.jpg" alt="picture goes here">
+				<p class="center">
+					<p>Sabrina Ahmed</p>
+					<p>ahmeds10@wit.edu</p>
+				</p>
+			</div>
 
-					<div class="profile">
-						<img src="./img/contactInfo/sittingUnicorn.jpg" alt="picture goes here">
-						<p class="center">
-							<p>Meagan Haradon</p>
-							<p>haradonm@wit.edu</p>
-						</p>
-					</div>
-
+			<div class="profile">
+				<img src="./img/about/sittingUnicorn.jpg" alt="picture goes here">
+				<p class="center">
+					<p>Meagan Haradon</p>
+					<p>haradonm@wit.edu</p>
+				</p>
+			</div>
 		</section>
 
+		<!-- divider -->
 		<div class="floor">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 		</div>
 
+		<!-- footer -->
 		<footer class="background">
 			<p class="text-footer">
 				Copyright © All Rights are Reserved

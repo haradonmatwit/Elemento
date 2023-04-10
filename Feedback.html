@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="./style/homeStyles.css" />
-		<link rel="stylesheet" href="./style/navbarStyles.css" />
-		<link rel="stylesheet" href="./style/feedbackStyle.css" />
+		<link rel="stylesheet" href="./css/navbarStyles.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/feedbackStyles.css" />
 
-		<link rel="stylesheet" href="./index.css" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<script src="./submit_form.js" defer></script>
-		<title>Feedbakc</title>
+
+		<title>Feedback</title>
 	</head>
 
-<header id="navbar" >
-	<nav class="navbar-container">
-		<a href="./Home.html" class="home-link">
-			<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
-			ELEMENT
-			<img src="./img/gif/Earth_Run_Right.gif" width="30" height="45" alt="This will display an animated GIF" />
-		</a>
-		<div id="navbar-menu" aria-labelledby="navbar-toggle">
-			<ul class="navbar-links">
-				<li class="navbar-item">
-					<a class="navbar-link" href="./About.html">
-						<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-						About
-					</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="./Feedback.html">
-						<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-						Feedback
-					</a>
-				</li>
-				<li class="navbar-item">
-					<a class="navbar-link" href="./Tutorial.html">
-						<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
-						Tutorial
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</header>
+	<body>
+		<!-- navbar -->
+		<header id="navbar">
+			<nav class="navbar-container container">
+				<a href="./Home.html" class="home-link">
+					<div class="navbar-logo"><img class="logo-img" src="./img/logo.png" /></div>
+					ELEMENT
+					<img src="./img/gif/Earth_Run_Right.gif" alt="This will display an animated GIF" />
+				</a>
 
-<body>
-	<img class="logo" src="./img/logo.png" />
-		<h1 class="title-feedback"><span class="feedback-title-side1">FEED</span><span class="feedback-title-side2">BACK</span></h1>
+				<div id="navbar-menu" aria-labelledby="navbar-toggle">
+					<ul class="navbar-links">
+						<li class="navbar-item">
+							<a class="navbar-link" href="./About.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								About
+							</a>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Feedback.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Feedback
+							</a>
+						</li>
+						<li class="navbar-item">
+							<a class="navbar-link" href="./Tutorial.html">
+								<img src="./img/gif/Heart.gif" alt="This will display an animated GIF" />
+								Tutorial
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- logo and title -->
+		<img class="logo" src="./img/logo.png" />
+		<h1 class="title"><span class="feedback-title-side1">FEED</span><span class="feedback-title-side2">BACK</span></h1>
 		
 		<div class="logo-desc">
 			<img src="./img/gif/Earth_Hit_Right.gif" class="logo-img-desc">
 		</div>
 	
+		<!-- divider -->
 		<div class="floor">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 		</div>
 
+		<!-- content -->
 		<div class="form-container">
-			<div class="container">
+			<div class="form">
 				<h1>FEEDBACK FORM</h1>
 				<form id="feedback-form" method="post" action="/submit.php">
 					<fieldset>
@@ -112,17 +118,20 @@
 			</p>
 		</div>
 	
-	<div class="floor">
-		<img src="./img/gif/floor.png" class="floor-img-desc">
-		<img src="./img/gif/floor.png" class="floor-img-desc">
-		<img src="./img/gif/floor.png" class="floor-img-desc">
-	</div>
+		<!-- divider -->
+		<div class="floor">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+			<img src="./img/gif/floor.png" class="floor-img-desc">
+		</div>
 
-	<footer class="background">
-		<p class="text-footer">
-			Copyright © All Rights are Reserved
-			<br/>
-			By Wentworth Institute of Technology students: Sabrina Ahmed, Tiffany Phan, Randy Batista, and Meagan Haradon
-		</p>
-	</footer>
+		<!-- footer -->
+		<footer class="background">
+			<p class="text-footer">
+				Copyright © All Rights are Reserved
+				<br/>
+				By Wentworth Institute of Technology students: Sabrina Ahmed, Tiffany Phan, Randy Batista, and Meagan Haradon
+			</p>
+		</footer>
+	</body>
 </html>

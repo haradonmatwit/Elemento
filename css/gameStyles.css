@@ -1,0 +1,13 @@
+canvas {
+	display:block;
+	margin: 0px auto 0px;
+	width: 90%;
+}
+
+.game-footer {
+	width: 100%;
+	display:flex;
+	justify-content: end;
+	align-items: end;
+	padding-top: 40px;
+}

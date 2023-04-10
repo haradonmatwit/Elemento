@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="./style/homeStyles.css" />
-		<link rel="stylesheet" href="./style/navbarStyles.css" />
-		<link rel="stylesheet" href="./style/gameButton.css" />
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./css/homeStyles.css" />
+		<link rel="stylesheet" href="./css/navbarStyles.css" />
+		<link rel="stylesheet" href="./css/gameButton.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Home</title>
 	</head>
 
 	<body>
+		<!-- navbar -->
 		<header id="navbar">
 			<nav class="navbar-container container">
 				<a href="./Home.html" class="home-link">
@@ -19,6 +22,7 @@
 					ELEMENT
 					<img src="./img/gif/Fire_Run_Right.gif" alt="This will display an animated GIF" />
 				</a>
+
 				<div id="navbar-menu" aria-labelledby="navbar-toggle">
 					<ul class="navbar-links">
 						<li class="navbar-item">
@@ -44,21 +48,25 @@
 			</nav>
 		</header>
 
+		<!-- logo and title -->
 		<img class="logo" src="./img/logo.png" />
-		<h1 class="title-home"><span class="home-title-side1">ELEM</span><span class="home-title-side2">ENTO</span></h1>
+		<h1 class="title"><span class="home-title-side1">ELEM</span><span class="home-title-side2">ENTO</span></h1>
 		
+		<!-- player gif -->
 		<div class="logo-desc">
 			<img src="./img/gif/Fire_Idle_Right.gif" class="logo-img-desc">
 		</div>
 
+		<!-- divider -->
 		<div class="floor">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 		</div>
 
-		<div class="dec-container">
-			<div class="home-description">
+		<!-- content -->
+		<div class="home-container">
+			<div class="home-desc">
 				<p class="game-desc">
 					Your search for treasure leads you to ancient ruins filled with pure elemental energy. You feel a 
 					connection to this energy, and realize that you are able to harness it. Use the power of the four 
@@ -69,15 +77,16 @@
 			<div class="game-btn">
 				<button type="button" class="gameBtn1" role="button" onclick="window.location.href='./Game.html';"></button>
 			</div>
-			<br />
 		</div>
 
+		<!-- divider -->
 		<div class="floor">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 			<img src="./img/gif/floor.png" class="floor-img-desc">
 		</div>
 
+		<!-- footer -->
 		<footer class="background">
 			<p class="text-footer">
 				Copyright © All Rights are Reserved
