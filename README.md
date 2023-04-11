@@ -1,5 +1,6 @@
 # ELEMENTO
 Web Development Spring 2023 Final Project - ELEMENTO
+
 By Team STRM (Storm): Sabrina Ahmed, Tiffany Phan, Randy Batista, Meagan Haradon
 
 A website made specifically for a simple platformer game inspired by the likes of old games such as Fireboy and Watergirl.
