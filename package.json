@@ -2,11 +2,15 @@
   "name": "elemento",
   "version": "1.0.0",
   "description": "Web Development final project",
-  "main": "index.js",
+  "main": "js/game.js",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
 }
